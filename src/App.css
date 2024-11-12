@@ -1,16 +1,21 @@
-.App {
-  text-align: center;
+:root {
+  --darkGray: #222222;
+  --lightGray: #2C2C2C;
+  --lightestGray: rgba(255, 255, 255, 0.5);
+  --red: #E31C25;
+  --darkRed: #BB000E;
+  --white: #FFFFFF;
+  --black: #000000;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+  font-size: 62.5%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.6rem;
+  background-color: #000000;
 }
 
 .App-header {

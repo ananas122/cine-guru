@@ -1,0 +1,21 @@
+.tag {
+    cursor: pointer;
+    display: inline-block;
+    margin: 5px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+  }
+  
+  .tag.selected {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .movie-card {
+    list-style: none;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }

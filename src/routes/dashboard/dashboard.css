@@ -1,0 +1,132 @@
+/* Modernized Dashboard Styling */
+
+.dashboard {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #FFFFFF;
+    background: linear-gradient(135deg, #1e1e1e, #3a3a3a);
+    /* Dark gradient background */
+    overflow: auto;
+    font-family: 'Arial', sans-serif;
+}
+
+.dashboard-layout {
+    display: flex;
+    height: 100%;
+}
+
+.sidebar {
+    width: 280px;
+    /* Increased width slightly for better spacing */
+    background: rgba(40, 40, 40, 0.9);
+    /* Semi-transparent black with blur */
+    backdrop-filter: blur(10px);
+    /* Blurring effect for a glassy look */
+    color: #FFFFFF;
+    padding: 20px;
+    box-shadow: 4px 0 8px rgba(0, 0, 0, 0.2);
+    /* Soft shadow for depth */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebar h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #E31C25;
+    /* Accent color for the title */
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+    padding: 10px 15px;
+    border-radius: 8px;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
+.sidebar ul li:hover {
+    background-color: #E31C25;
+    /* Accent color on hover */
+    color: #FFFFFF;
+}
+
+.dashboard-content {
+    flex-grow: 1;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.05);
+    /* Light transparent overlay */
+    backdrop-filter: blur(5px);
+    /* Blurring effect for glassy look */
+    overflow-y: auto;
+    border-radius: 16px 0 0 16px;
+    /* Rounded corners on one side */
+    margin: 20px;
+    /* Adds some spacing inside the main layout */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    /* Soft shadow for depth */
+}
+
+.dashboard-content h1 {
+    font-size: 2rem;
+    color: #E31C25;
+    /* Accent color for headings */
+    margin-bottom: 20px;
+    text-align: center;
+    border-bottom: 2px solid #E31C25;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+
+.dashboard-content p,
+.dashboard-content .content-section {
+    color: #E0E0E0;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.button-primary {
+    background-color: #E31C25;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.button-primary:hover {
+    background-color: #BB000E;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    .dashboard-content {
+        margin: 10px;
+        padding: 15px;
+    }
+}

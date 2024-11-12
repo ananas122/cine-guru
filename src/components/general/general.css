@@ -1,0 +1,13 @@
+.input-wrapper, .select-wrapper, .button, .search-bar {
+  margin: 10px 0;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  margin-right: 8px;
+}
+

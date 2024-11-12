@@ -1,0 +1,112 @@
+/* Modernized Styling */
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(135deg, #1e1e1e, #3a3a3a);
+  font-family: 'Arial', sans-serif;
+}
+
+.auth-container {
+  background: rgba(255, 255, 255, 0.85);
+  /* Semi-transparent white background */
+  backdrop-filter: blur(8px);
+  /* Blurring background for modern glass effect */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  /* Soft shadow */
+  width: 100%;
+  max-width: 400px;
+  padding: 40px 20px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.auth-buttons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.auth-buttons button {
+  flex: 1;
+  padding: 12px;
+  margin: 0;
+  border-radius: 8px;
+  border: none;
+  color: white;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.auth-buttons button.primary {
+  background-color: #E31C25;
+}
+
+.auth-buttons button.primary:hover {
+  background-color: #BB000E;
+}
+
+.auth-buttons button.secondary {
+  background-color: #3a3a3a;
+}
+
+.auth-buttons button.secondary:hover {
+  background-color: #5a5a5a;
+}
+
+input {
+  display: block;
+  margin: 20px auto;
+  padding: 12px;
+  width: 85%;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f5f5f5;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  border-color: #E31C25;
+  background-color: #fff;
+  outline: none;
+}
+
+button {
+  padding: 12px;
+  width: 100%;
+  background-color: #E31C25;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #BB000E;
+}
+
+.underline-input {
+  border: none;
+  border-bottom: 2px solid #fd949a;
+  outline: none;
+  padding: 10px;
+  background: none;
+  width: 85%;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.underline-input:focus {
+  border-color: #E31C25;
+}
+
+.underline-input:hover {
+  border-color: #BB000E;
+}
